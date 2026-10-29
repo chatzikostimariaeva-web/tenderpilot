@@ -36,7 +36,22 @@ st.markdown("""
         padding: 18px;
         border-radius: 10px;
         border: 1px solid #e1e6ed;
-    }
+    }/* Διόρθωση αναγνωσιμότητας κειμένων */
+h1, h2, h3, h4, p, label {
+    color: #17365d;
+}
+
+div[data-testid="stMetric"] label {
+    color: #17365d !important;
+}
+
+div[data-testid="stMetric"] [data-testid="stMetricValue"] {
+    color: #17365d !important;
+}
+
+div[data-testid="stMetric"] [data-testid="stMetricLabel"] {
+    color: #17365d !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
